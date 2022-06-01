@@ -1,0 +1,16 @@
+type NewsDto {
+    id : String
+    author : String
+    publicDate : String
+    title : String
+    content : String
+    imageUrls : [String]
+    comment : [CommentDto]
+}
+
+type CommentDto {
+    author: String
+    content: String
+    time: String
+    imageUrls : [String]
+}

@@ -1,0 +1,13 @@
+schema {
+    query: Query
+    mutation: Mutation
+}
+
+type Query {
+    getContent(id:String): NewsDto
+    getAllContents: [NewsDto]
+}
+
+type Mutation {
+    deleteContent(id:String): NewsDto
+}

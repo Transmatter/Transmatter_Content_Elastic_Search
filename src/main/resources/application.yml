@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: "TP3 POC backend manage content"
+  data:
+    mongodb:
+      host: "localhost"
+      port: 27017
+      database: "Contents01"
+graphql:
+  servlet:
+    enabled: true
+    mapping: /graphql
+    corsEnabled: false
