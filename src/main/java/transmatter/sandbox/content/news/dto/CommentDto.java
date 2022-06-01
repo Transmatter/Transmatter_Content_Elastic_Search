@@ -16,5 +16,5 @@ public class CommentDto {
     String author;
     String content;
     String time;
-    List<String> imageUrls = new ArrayList<>();
+    List<String> image_urls = new ArrayList<>();
 }

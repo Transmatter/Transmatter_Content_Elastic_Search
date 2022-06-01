@@ -20,9 +20,9 @@ public class News {
     String id;
 
     String author;
-    String publicDate;
+    String public_date;
     String title;
     String content;
-    List<String> imageUrls;
+    List<String> image_urls;
     List<Comment> comment;
 }

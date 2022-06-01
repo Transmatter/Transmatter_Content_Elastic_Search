@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 import transmatter.sandbox.content.news.dto.NewsDto;
+import transmatter.sandbox.content.news.entity.News;
 import transmatter.sandbox.content.news.service.NewsService;
 import transmatter.sandbox.content.utils.TransmatterMapper;
 
@@ -18,17 +19,17 @@ public class NewsResolver implements GraphQLQueryResolver, GraphQLMutationResolv
     NewsService newsService;
 
     @Transactional
-    NewsDto getContent(String id){
-        return TransmatterMapper.INSTANCE.getNewsDto(newsService.getContent(id));
+    News getContent(String id){
+        return newsService.getContent(id);
     }
 
     @Transactional
-    List<NewsDto> getAllContents(){
-        return TransmatterMapper.INSTANCE.getNewsDto(newsService.getAllContents());
+    List<News> getAllContents(){
+        return newsService.getAllContents();
     }
 
     @Transactional
-    NewsDto deleteContent(String id){
-        return TransmatterMapper.INSTANCE.getNewsDto(newsService.deleteContent(id));
+    News deleteContent(String id){
+        return newsService.deleteContent(id);
     }
 }

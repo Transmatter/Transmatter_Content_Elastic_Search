@@ -4,10 +4,10 @@ schema {
 }
 
 type Query {
-    getContent(id:String): NewsDto
-    getAllContents: [NewsDto]
+    getContent(id:String): News
+    getAllContents: [News]
 }
 
 type Mutation {
-    deleteContent(id:String): NewsDto
+    deleteContent(id:String): News
 }

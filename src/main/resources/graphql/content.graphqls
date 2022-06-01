@@ -1,16 +1,16 @@
-type NewsDto {
+type News {
     id : String
     author : String
-    publicDate : String
+    public_date : String
     title : String
     content : String
-    imageUrls : [String]
-    comment : [CommentDto]
+    image_urls : [String]
+    comment : [Comment]
 }
 
-type CommentDto {
+type Comment {
     author: String
     content: String
     time: String
-    imageUrls : [String]
+    image_urls : [String]
 }
