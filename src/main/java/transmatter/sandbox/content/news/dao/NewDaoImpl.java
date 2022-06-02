@@ -27,4 +27,9 @@ public class NewDaoImpl implements NewsDao {
     public void deleteContent(String id) {
         newsRepository.deleteById(id);
     }
+
+    @Override
+    public News updateContent(News news) {
+        return newsRepository.save(news);
+    }
 }

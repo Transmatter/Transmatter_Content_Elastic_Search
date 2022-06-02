@@ -1,10 +1,11 @@
 type News {
     id : String
+    source : String
     author : String
     public_date : String
     title : String
     content : String
-    image_urls : [String]
+    images : [Image]
     comment : [Comment]
 }
 
@@ -13,4 +14,13 @@ type Comment {
     content: String
     time: String
     image_urls : [String]
+}
+
+type Image {
+    url : String
+    alt : String
+}
+
+input ImageText {
+    alt : String
 }

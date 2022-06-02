@@ -14,10 +14,11 @@ import java.util.List;
 public class NewsDto {
     String id;
 
+    String source;
     String author;
     String public_date;
     String title;
     String content;
-    List<String> image_urls;
+    List<ImageDto> images;
     List<CommentDto> comment;
 }

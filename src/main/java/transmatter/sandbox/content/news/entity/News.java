@@ -19,10 +19,11 @@ public class News {
     @Id
     String id;
 
+    String source;
     String author;
     String public_date;
     String title;
     String content;
-    List<String> image_urls;
+    List<Image> images;
     List<Comment> comment;
 }
